@@ -27,15 +27,19 @@
             Console.WriteLine("Length of Line1:" + first);
             Console.WriteLine("Length of Line2:" + second);
 
-            double compare = first.CompareTo(second);
+            int Linecompare = first.CompareTo(second);
 
-            if (compare >= 0)
+            if (Linecompare == 0)
             {
-                Console.WriteLine("First line is greater than second line");
+                Console.WriteLine("Both the Lines are equal");
+            }
+            else if (Linecompare == 1)
+            {
+                Console.WriteLine("first line is greater than second line");
             }
             else
             {
-                Console.WriteLine("Second line is greater than first line");
+                Console.WriteLine("first line is less than second line");
             }
 
             Console.ReadLine();
